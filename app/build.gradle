@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.0"
+    defaultConfig {
+        applicationId "cn.zhangxianli.memorymonster"
+        minSdkVersion 9
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        flavor9 {
+            minSdkVersion 14
+            applicationId 'cn.zhangxianli.memorymonster9'
+            targetSdkVersion 21
+            versionCode 1
+            versionName '1.0'
+        }
+        flavor8 {
+            minSdkVersion 14
+            applicationId 'cn.zhangxianli.memorymonster8'
+            targetSdkVersion 21
+            versionCode 1
+            versionName '1.0'
+        }
+        flavor7 {
+            minSdkVersion 14
+            applicationId 'cn.zhangxianli.memorymonster7'
+            targetSdkVersion 21
+            versionCode 1
+            versionName '1.0'
+        }
+        flavor6 {
+            minSdkVersion 14
+            applicationId 'cn.zhangxianli.memorymonster6'
+            targetSdkVersion 21
+            versionCode 1
+            versionName '1.0'
+        }
+        flavor5 {
+            minSdkVersion 14
+            applicationId 'cn.zhangxianli.memorymonster5'
+            targetSdkVersion 21
+            versionCode 1
+            versionName '1.0'
+        }
+        flavor4 {
+            minSdkVersion 14
+            applicationId 'cn.zhangxianli.memorymonster4'
+            targetSdkVersion 21
+            versionCode 1
+            versionName '1.0'
+        }
+        flavor3 {
+            minSdkVersion 14
+            applicationId 'cn.zhangxianli.memorymonster3'
+            targetSdkVersion 21
+            versionCode 1
+            versionName '1.0'
+        }
+        flavor2 {
+            minSdkVersion 14
+            applicationId 'cn.zhangxianli.memorymonster2'
+            targetSdkVersion 21
+            versionCode 1
+            versionName '1.0'
+        }
+        flavor1 {
+            minSdkVersion 14
+            applicationId 'cn.zhangxianli.memorymonster1'
+            targetSdkVersion 21
+            versionCode 1
+            versionName '1.0'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.0'
+}
